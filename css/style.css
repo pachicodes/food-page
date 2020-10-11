@@ -1,0 +1,100 @@
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #bfd7ff;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: "Sofia", cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #ae0058;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #2b2b2b;
+  margin: 0px 0 70px 0;
+  font-style: italic;
+}
+p {
+  color: #2b2b2b;
+  background: #ffbfd9;
+  background: linear-gradient(
+    top,
+    rgba(255, 191, 217, 1),
+    rgba(255, 191, 217, 0.5)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 191, 217, 1),
+    rgba(255, 191, 217, 0.5)
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 191, 217, 1),
+    rgba(255, 191, 217, 0.5)
+  );
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+.first {
+  background-image: url("https://assets.epicurious.com/photos/58829741a28288da2b8f6ef7/6:4/w_620%2Ch_413/brigadeiros-HC-012017.jpg");
+}
+.second {
+  background-image: url("http://manisnacks.com/site/wp-content/uploads/2014/05/Pa%C3%A7oca-1-1.jpg");
+}
+.dessert {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Bem-casado.JPG");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
